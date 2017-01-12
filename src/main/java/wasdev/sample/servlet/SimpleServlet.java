@@ -20,8 +20,14 @@ public class SimpleServlet extends HttpServlet {
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    	NaturalLanguageClassifier service = new NaturalLanguageClassifier();
+		service.setUsernameAndPassword("328aaa11-efba-4646-97c2-2808241fca42", "Fjx1mQ2AQXZu");
+
+		Classification classification = service.classify("ff1c34x160-nlc-3080","How hot will it be today?").execute();
+		//System.out.println(classification);
+        
         response.setContentType("text/html");
-        response.getWriter().print("Hello World!ようこそ");
+        response.getWriter().print(classification.top_class);
     }
 
 }
