@@ -31,7 +31,7 @@ public class SimpleServlet extends HttpServlet {
 		//System.out.println(classification);
         
         response.setContentType("text/html");
-        response.getWriter().print(classification.top_class);
+        response.getWriter().print(classification);
     }
 
 }
