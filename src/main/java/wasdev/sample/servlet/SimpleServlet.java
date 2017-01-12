@@ -30,7 +30,7 @@ public class SimpleServlet extends HttpServlet {
 		Classification classification = service.classify("ff1c34x160-nlc-3080","How hot will it be today?").execute();
 		//System.out.println(classification);
         
-        response.setContentType("text/html");
+        response.setContentType("text/html charset=utf-8");
         response.getWriter().print(classification);
     }
 
