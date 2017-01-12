@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.ibm.watson.developer_cloud.natural_language_classifier.v1.NaturalLanguageClassifier;
 import com.ibm.watson.developer_cloud.natural_language_classifier.v1.model.Classifier;
-
+import com.ibm.watson.developer_cloud.natural_language_classifier.v1.model.Classification;
 
 /**
  * Servlet implementation class SimpleServlet
